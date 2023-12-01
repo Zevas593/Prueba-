@@ -1,0 +1,20 @@
+package mascotas;
+
+public class Gato extends Mascota {
+
+    boolean tieneCollar;
+
+    public Gato(boolean tieneCollar, String nombre, int edad) {
+        super(nombre, edad);
+        this.tieneCollar = tieneCollar;
+    }
+
+    @Override
+    public void hacerSOnido() {
+        System.out.println(nombre + " dice: Meow!");
+    }
+
+    public void arañarMuebles() {
+        System.out.println(nombre + " está arañando los muebles");
+    }
+}
