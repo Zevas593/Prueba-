@@ -1,0 +1,20 @@
+package mascotas;
+
+public class Perro extends Mascota {
+
+    String raza;
+    
+    public Perro(String nombre, int edad, String raza) {
+        super(nombre, edad);
+        this.raza = raza;
+    }
+    
+    @Override
+    public void hacerSOnido() {
+        System.out.println(nombre + "dice: Woof! Woof!");
+    }
+
+    public void perseguirCola() {
+        System.out.println(nombre + " está persiguiendo su cola.");
+    }      
+}
