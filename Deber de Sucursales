@@ -1,0 +1,60 @@
+package sucursales;
+
+import java.util.Scanner;
+
+
+public class Sucursales {
+
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String[] sucursal1 = {"Computadora", "Impresora", "Teclado", "Mouse", "Monitor", "Disco Duro", "Memoria RAM", "Webcam", "Altavoces"};
+        String[] sucursal2 = {"Laptop", "Tablet", "Cargador", "Auriculares", "Router", "Impresora", "Teclado", "Mouse", "Altavoces"};
+        String[] sucursal3 = {"Smartphone", "Cargador", "Auriculares", "Funda", "Protector de pantalla", "Batería externa", "Cable USB", "Soporte para teléfono", "Adaptador"};
+
+        System.out.println("¡Bienvenido a Worlds Computers!");
+
+        while (true) {
+            System.out.println("\n**** Menú Principal ****");
+            System.out.println("1. Mostrar productos de Sucursal Quito");
+            System.out.println("2. Mostrar productos de Sucursal Ibarra");
+            System.out.println("3. Mostrar productos de Sucursal Guayaquil");
+            System.out.println("4. Salir");
+            System.out.println("***********");
+
+            System.out.print("Seleccione una opción: ");
+            int opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("\n**** Productos Sucursal Quito ****");
+                    for (String producto : sucursal1) {
+                        System.out.println(producto);
+                    }
+                    System.out.println("*************");
+                    break;
+                case 2:
+                    System.out.println("\n**** Productos Sucursal Ibarra ****");
+                    for (String producto : sucursal2) {
+                        System.out.println(producto);
+                    }
+                    System.out.println("*************");
+                    break;
+                case 3:
+                    System.out.println("\n**** Productos Sucursal Guayaquil ****");
+                    for (String producto : sucursal3) {
+                        System.out.println(producto);
+                    }
+                    System.out.println("*************");
+                    break;
+                case 4:
+                    System.out.println("Saliendo del programa. ¡Hasta luego!");
+                    System.exit(0);
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+            }
+        }
+    }
+    
+}
