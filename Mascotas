@@ -1,0 +1,23 @@
+package mascotas;
+
+public abstract class Mascota {
+
+    String nombre;
+    int edad;
+
+    public Mascota(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    public abstract void hacerSOnido();
+
+    public void comer() {
+        System.out.println(nombre + " está comiendo.");
+    }
+
+    public void dormir() {
+        System.out.println(nombre + " está durmiendo.");
+    }
+
+}
