@@ -1,0 +1,31 @@
+package com.mycompany.proy;
+
+import java.util.Scanner;
+
+
+public class Proy {
+
+    public static void main(String[] args) {
+        Scanner ls = new Scanner(System.in);
+
+        String[] datosAlumno = new String[4];
+
+        System.out.println("Ingrese datos para el alumno:");
+        System.out.print("Nombres: ");
+        datosAlumno[0] = ls.next();
+
+        System.out.print("Apellidos: ");
+        datosAlumno[1] = ls.next();
+
+        System.out.print("Cedula: ");
+        datosAlumno[2] = ls.next();
+        
+
+        System.out.println("\nDatos del alumno:");
+        System.out.println("Nombre: " + datosAlumno[0]);
+        System.out.println("Apellido: " + datosAlumno[1]);
+        System.out.println("Salario: " + datosAlumno[2]);
+        
+        ls.close();
+    }
+}
